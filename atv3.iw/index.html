@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 1</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{
+            widht: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(58, 67, 172);
+            color: white;
+        }
+        thead, tfoot {
+             background-color: rgb(58, 67, 172);
+             color: white;
+        }
+        tbody > tr:nth-child(odd) {
+             background-color: rgb(109, 184, 231);   
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(168, 213, 232);
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ESTRUTURA DE TABELAS GRANDES</h1> 
+     
+    <table>
+       <caption>População dos estados</caption>
+
+       <thead>
+        <tr>
+            <th colspan="2">Sudeste</th>
+        </tr>
+
+        <tr>
+            <th>Estado</th>
+            <th style="width: 50px;">Quantidade</th>
+        </tr>
+       </thead>
+
+       <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">44 milhões</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">20 milhões</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 milhões</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="num">4 milhões</td>
+        </tr>
+       </tbody>
+
+       <tfoot>
+        <tr>
+            <th>Total de habitantes</th>
+            <td class="num"><strong>84 milhões</strong></td>
+        </tr>
+       </tfoot>
+    </table>
+</body>
+</html>
