@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+
+    <style>
+
+    td{
+      text-align: center;
+      border: 1px solid black;
+      padding: 10 px;
+      }
+    
+     tr{
+       font-size: 25px;
+       padding: 20px;
+     }
+
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+
+      table{
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    
+<h1>MESCLAGEM DE CÉLULAS</h1>
+
+    <table>
+
+     <tr>
+    <td>A</td> 
+    <td colspan="3">B</td>
+     </tr>   
+
+     <tr>
+        <td rowspan="3">C</td>
+        <td colspan="2">D</td>
+        <td rowspan="2">E</td>
+     </tr>
+
+     <tr>
+        <td colspan="2">F</td> 
+     </tr>
+
+     <tr>
+        <td colspan="3">G</td> 
+     </tr>
+
+    </table>
+
+</body>
+
+</html>
