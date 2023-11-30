@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIERARQUIA DE TÍTULOS</title>
+
+        <style>
+            *{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            h1{
+                color: #1c2b67;
+            }
+
+            h2{
+                color: #365d86;
+            }
+
+            h3{
+                color: #5893a4;
+            }
+
+            h4{
+                color: #808080;
+            }
+
+            p{
+                text-align: justify;
+                text-indent: 2cm;
+            }
+
+        </style>
+</head>
+<body>
+
+<h1>BOAS PRÁTICAS DA ACESSIBILIDADE DIGITAL</h1>
+
+<h2>BOAS PRÁTICAS NO DESENVOLVIMENTO</h2>
+
+<h3>DESCRIÇÃO DAS IMAGENS</h3>
+
+<p>Para que pessoas com deficiência visual severa – cegueira total ou
+    parcial – tenham acesso ao conteúdo de um site, é necessário que todas as
+    imagens e conteúdos não-textuais tenham uma descrição. Esse conteúdo em
+    texto deve seguir algumas diretrizes pré-estabelecidas para que estejam de
+    maneira apropriada à navegação por leitores de tela. Uma imagem pode ou não
+    transmitir uma informação. Desta forma, podemos dividir as imagens inseridas
+    em uma página de duas formas: com conteúdo e decorativa.</p>
+
+<h4>IMAGENS COM CONTEÚDO</h4>
+
+<p>Todas as imagens que apresentam conteúdo devem conter uma
+    descrição. A descrição da imagem pode ser informada no próprio texto ou por
+    meio de um atributo específico do elemento img no HTML, também chamado de
+    ALT. A descrição fornecida através deste atributo não aparece visualmente. Esse
+    recurso só será reconhecido pelo leitor de ela quando o usuário, navegando pelo
+    teclado, passar por ela. Desta forma, os usuários com deficiência visual sabem
+    qual é o conteúdo da imagem por meio do texto de descrição.</p>
+
+<h4>IMAGENS DECORATIVAS</h4>
+
+<p>As imagens decorativas devem ser ignoradas pelos recursos de
+    tecnologia assistiva. Ou seja, os leitores de tela não devem considerar a
+    presença delas, pois não há conteúdo a ser transmitido.Para que o código esteja
+    preparado, a recomendação é a inserção de todas as imagens decorativas
+    através das folhas de estilo (CSS). Em relação ao atributo ALT, a indicação é não
+    preenchê-lo com nenhuma informação, também chamada de alt vazio (alt=””).
+    Assim, os leitores de tela não reconhecerão esses conteúdos, facilitando a
+    navegação assistiva.</p>
+
+<h3>HIERARQUIA DE CABEÇALHOS</h3>
+
+<p>Existe a possibilidade de navegar entre cabeçalhos, de maneira
+    hierárquica. Ou seja, se eu estou navegando entre H1, eu posso a qualquer
+    momento querer varrer entre os cabeçalhos H2 filhos daquele H1 e depois nos
+    H3 filhos de um determinado H2 (desde que o site esteja corretamente
+    estruturado) e assim por diante. Para isso acontecer, devemos definir de maneira
+    correta esses cabeçalhos, pois além de serem extremamente relevantes para
+    SEO ainda melhoram a navegabilidade por leitores de tela. O H1 normalmente é
+    utilizado como cabeçalho principal, não se repetindo numa mesma página. À
+    partir do H2 as coisas começam a ficar mais interessantes, pois para cada
+    subtítulo de um determinado conteúdo, é possível acessar os filhos desse
+    subtítulo se esses existirem (você pode delimitar por exemplo, na área de um
+    post de um blog, o H2 como título, H3 como gravata daquele post , um H4 nos
+    títulos do conteúdo e um segundo H3 como área de comentários, delimitando
+    onde termina o conteúdo e começa uma nova parte).</p>
+
+<h3>LINKS E ATALHOS DE NAVEGAÇÃO</h3>
+
+<p>Os links de uma página devem ser navegáveis por teclado para a
+    acessibilidade de pessoas com deficiência visual ou mobilidade reduzida, que não
+    utilizam dispositivos apontadores (mouses, por exemplo). Para isso, são
+    utilizados atalhos de navegação pelo teclado, como o TAB, ALT ou SHIFT + AL,
+    utilizadas para percorrer links, que devem seguir uma ordem lógica. O atributo
+    tabindex permite definir essa ordem dentro de HTML linear, com uma ordem
+    lógica de navegação. Há três tipos de teclas de atalho para a navegação na web,
+    que podem ser usadas de forma combinada ou isoladamente. São elas:</p>
+
+<ul>
+    <li>Teclas de atalho do próprio navegador (IE, Google Chrome, Firefox etc.);</li>
+    <li>Teclas de utilização do leitor de tela ou outras tecnologias assistivas;</li>
+    <li>Teclas de navegação e atalho de um site criadas por seu desenvolvedor.</li>
+</ul>
+
+<p>No caso dos navegadores, cada um deles possuem conjuntos de atalhos
+    próprios. O mesmo ocorre com leitores de telas e outras tecnologias
+    assistivas, que possuem atalhos próprios.</p>
+
+<h2>BOAS PRÁTICAS DE DESIGN</h2>
+
+<ul>
+<li>O tamanho das fontes deve facilitar a leitura.</li>
+<li>As cores devem seguir regras de contraste que contribuem para a identificação dos elementos.</li>
+<li>Os links devem ser facilmente identificados, e não confundíveis com blocos de texto.</li>
+<li>Links que direcionam para fora do site precisam ser identificados.</li>
+<li>Todo elemento informativo, como ícone, precisa de um elemento textual que o descreva.</li>
+<li>Evite alinhamento centralizado nos blocos de texto e não utilize textos justificados.</li>
+<li>Evite texto em itálico, pois essa formatação dificulta a leitura.</li>
+<li>O espaçamento entre os elementos deve ser consistente e não deixar dúvidas entre a relação do conteúdo.</li>
+<li>O usuário deve ter controle sobre as animações do site.</li>
+</ul>
+
+<h2>BOAS PRÁTICAS PARA CONTEÚDOS</h2>
+
+<ul>
+<li>Todo conteúdo digital não textual deve conter descrição da imagem (fotos, ilustrações, tabelas, gráficos, gifs);</li>
+<li>Na descrição de imagens, seguimos uma fórmula: o que/quem + onde +
+    como + faz o quê + como + quando + de onde. A fórmula simplificada:
+    formato + sujeito + paisagem + contexto + ação;</li>
+<li>Evite a redundância na descrição. “A foto ilustra” é um pleonasmo. Seja
+    simples, direto;</li>
+<li>Evite, na descrição de imagens, adjetivos que representam juízo de valor
+    (bonito, feio, bom, mau etc.);</li>
+<li>Os conteúdos em vídeo devem ter audiodescrição. Ela deve contextualizar
+    o conteúdo em vídeo sem atrapalhar a compreensão do áudio original;</li>
+<li>Todo conteúdo em vídeo com texto falado deve possuir versão legendada
+    (para surdos alfabetizados em português);</li>
+<li>Além das legendas, é crucial que o conteúdo tenha, também, janela de
+    Libras (com avatar digital ou tradutor-intérprete), para surdos não
+    oralizados;</li>
+<li>Conteúdos em áudio (como podcasts) também devem ter transcrição em
+    texto;</li>
+<li>É recomendável que todos os sites tenham um avatar digital para
+    interpretação em Libras, para surdos não alfabetizados em português;</li>
+<li>Os textos precisam ter uma estrutura mais simples, com frases e
+    parágrafos curtos, ordem direta, voz ativa, sem figuras de linguagem ou
+    termos pouco usuais;</li>
+<li>Os hiperlinks dentro dos textos devem indicar o destino do link. Evite
+    “Clique aqui”, “Saiba mais”, “post”. Prefira: “Acesse o site (nome do site)”,
+    “Saiba mais no portal (nome do portal)”. Isso porque muitos cegos
+    navegam somente pelos links;</li>
+<li>Redes sociais, como o Facebook e Instagram, contam com alguns recursos
+    para acessibilidade e têm páginas e fóruns específicos para esclarecer
+    dúvidas e anunciar novidades.</li>
+</ul>
+
+</body>
+</html>
